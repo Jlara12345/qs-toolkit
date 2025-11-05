@@ -1,4 +1,8 @@
 jdk:
   - openjdk21
+
 install:
-  - mvn -q -DskipTests -DskipITs clean install
+  - |
+    mvn -q -DskipTests -DskipITs \
+        -pl qs-model,qs-client-jersey,qs-selenide,qs-server-web \
+        -am clean install
