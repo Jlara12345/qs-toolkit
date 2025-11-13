@@ -6,7 +6,7 @@
 
   <groupId>com.qs</groupId>
   <artifactId>qs-toolkit</artifactId>
-  <version>0.1.0</version>
+  <version>0.1.6</version>
   <packaging>pom</packaging>
 
   <!-- Módulos hijos -->
@@ -22,8 +22,9 @@
   <!-- ========================= -->
   <properties>
     <!-- Compilación base -->
-    <maven.compiler.source>21</maven.compiler.source>
-    <maven.compiler.target>21</maven.compiler.target>
+    <maven.compiler.source>17</maven.compiler.source>
+  <maven.compiler.target>17</maven.compiler.target>
+  <maven.compiler.release>17</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
     <!-- ========================= -->
@@ -143,7 +144,7 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>${compiler.plugin.version}</version>
           <configuration>
-            <release>21</release>
+            <release>17</release>
           </configuration>
         </plugin>
 
